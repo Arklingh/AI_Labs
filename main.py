@@ -8,7 +8,6 @@ data = np.loadtxt('input/lab01.csv', delimiter=';')
 
 plt.scatter(data[:,0], data[:,1], marker='o', facecolors='black')
 plt.title('Input data')
-#plt.show()
 
 # train ms_model
 clusts.trainModel(data)
@@ -26,7 +25,6 @@ for i, marker in zip(range(num_clusters), markers):
     plt.plot(cluster_center[0], cluster_center[1], marker = 'o', markeredgecolor = 'black', markersize = 15)
 
 plt.title('Clusters')
-#plt.show()
 
 # get quality
 values = range(2, 16)
