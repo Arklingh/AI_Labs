@@ -65,7 +65,7 @@ def main():
                 toolbox.mate(child1, child2)
 
                 del child1.fitness.values
-                del child1.fitness.values
+                del child2.fitness.values
 
         for mutant in offspring:
             if random.random() < P_MUTATION:
